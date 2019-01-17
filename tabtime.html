@@ -2,15 +2,15 @@
 <html>
 
     <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="#home">Top</a>
   <a href="#TimBerners-Lee">Tim Berners-Lee</a>
   <a href="#HåkonWiumLie">Håkon Wium Lie</a>
   <a href="#BrendenEich">Brenden Eich</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
         </a>    
-</div>
-  
+    </div>
+    
 <style>    
     .topnav {
   background-color: #333;
@@ -51,6 +51,11 @@
   }
 }    
 
+     .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
     </style>
     
     <script>
@@ -62,15 +67,23 @@
     x.className = "topnav";
   }
 }
+        
+    
     </script>
     
+   <br>
+    <br>
+<h1><div id='Home'><a name='Home'>Tables of Time</a></div></h1>
+
+    <img src="https://cdn.crunchify.com/wp-content/uploads/2013/03/JavaScript-HTML5-and-CSS-Crunchify-Tutorials.png" width="500px">
     
-<h1>Tables of Time</h1>
 	
-	
-<h3>1989 - Time Berners-Lee invents the WWW & HTML</h3>
+<h3> <div id='TimBerners-Lee'><a name='Tim Berners-Lee'>1989 - Time Berners-Lee invents the WWW & HTML</a></div></h3>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Tim_Berners-Lee.jpg" width="150px"/>
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" width="300px"/>
+    <br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" width="150px">
 
 <table border="1">
   <th>Inventer</th><th>Technology</th>
@@ -85,9 +98,14 @@
   </tr>
 </table>
 
-<h3 id = "#HåkonWiumLie">1996 - Håkon Wium Lie invents CSS</h3>
+<h3><div id='HåkonWiumLie'><a name='Håkon Wium Lie'>1996 - Håkon Wium Lie invents CSS</a></div></h3>
 
 <img src="http://i.iinfo.cz/urs/hakon_wium_lie-121043715851298.jpg" width="150px"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2000px-Flag_of_Norway.svg.png" width="300px">
+    <br>
+<img src="https://www.optimum7.com/wp-content/uploads/2013/04/CSS3.png" width="150px">
+    
+    
 <style>
 
 #inventors {
@@ -129,11 +147,20 @@
   </tr>
 </table>
 
-<h3>1995 - Brenden Eich invents JavaScript</h3>
+<h3><div id='BrendenEich'><a name='Brenden Eich'>1995 - Brenden Eich invents JavaScript</a></div></h3>
 
 <div id="printmytable"></div>
 <img src="http://www.nndb.com/people/095/000031002/brendan-eich-2-sized.jpg" width="150px">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" width="300px">
+    <br>
+<img src="https://www.javatpoint.com/images/javascript/javascript_logo.png" width="150px">
 
+     <br>
+    Brandon Eich wrote the Java Script in 10 days in May 1995. He was 34 years old.
+    
+    <br>
+    <img src="https://sg.fiverrcdn.com/photos/26255072/original/61dc85f31ed5e5667e8f83739d3725fb87dc2687.png?1453871534" width="500px">
+    
 <script>
 
 function buildmyTable() {
@@ -162,6 +189,8 @@ function buildmyTable() {
 buildmyTable()
 
 </script>
+    
+    
 
 
 </html>
