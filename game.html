@@ -15,6 +15,14 @@ This text is displayed if your browser does not support HTML5 Canvas.
 canvas.width = 1000; //screan width
 canvas.height = 700; //screen height
 
+    var img = new Image();
+img.onload = function() {
+    var ctx = document.getElementById('ctx').getContext('2d');
+    ctx.drawImage(img, 0, 0);
+}
+img.src = 'goombaspriteimg/tile040.png';
+    
+    
 /* setting images from here.*/
 var background = new Image();
 background.src = "https://c1.staticflickr.com/1/167/387606049_9045614ef9_b.jpg";
@@ -69,12 +77,13 @@ function doKeyDown(evt){
 		case 38:  /* Up arrow was pressed */
 			if (y - dy > 100){
 				y -= dy;
-                
+                img.src = 'goombaspriteimg/tile032.png';
 			}
 			break;
 		case 40:  /* Down arrow was pressed */
 			if (y + dy < 450){
 				y += dy;
+                
 			}
 			break;
 		case 37:  /* Left arrow was pressed */
@@ -100,12 +109,7 @@ function draw() {
     
 }
     
-var img = new Image();
-img.onload = function() {
-    var ctx = document.getElementById('ctx').getContext('2d');
-    ctx.drawImage(img, 0, 0);
-}
-img.src = 'goombaspriteimg/tile040.png';
+
 	
 // Main part of program
 init();
