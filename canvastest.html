@@ -1,0 +1,26 @@
+<html>
+<body>
+    
+<img id="pikachu" width="200" height="350" src="https://www.andrew.cmu.edu/user/adowling/pokemon!/Images/pikachu.jpg" alt="Pikachu">
+
+<canvas id="myCanvas" width="900" height="900"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+    window.onload = function() {
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0,0,150,75);
+ctx.fillStyle = "blue";
+ctx.fillRect(300,500,300,155);
+
+var img = document.getElementById("pikachu");
+    ctx.drawImage(img,100,100);
+    };
+</script>
+
+</body>
+</html>

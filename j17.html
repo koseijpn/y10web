@@ -1,0 +1,39 @@
+<html>
+    
+    <div id = "printme"></div>
+    <div class = "myclass"></div>
+    <button onclick="afunction()">Click</button>
+    <button id = "news" onclick="window.open('http://www.youtube.com')">Youtube</button>
+    
+    
+    <style>
+        button {
+            color:dodgerblue;
+            padding: 20px;
+            background-color: fuchsia;
+        }
+        
+        #news {
+            color:red;
+        }
+        
+        #printme{
+            background-color: black;
+            color: red;
+            height: 150px;
+            text-align: center;
+        }
+    </style>
+    
+    
+    <script>
+        function afunction(){
+            var pme = document.getElementById("printme");
+            pme.innerHTML = "Helloworld";
+        }
+    
+    
+    </script>
+    
+</html>
+
